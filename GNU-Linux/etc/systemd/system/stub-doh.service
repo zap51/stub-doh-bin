@@ -3,7 +3,7 @@ Description=Stub Resolver for DNS over HTTPS
 After=network.target network-online.target nss-lookup.target
 
 [Service]
-ExecStart=/usr/local/bin/stub-doh --listen-port 53 --listen-address 127.0.0.1 --domain dns.team-h.ml
+ExecStart=/usr/local/bin/stub-doh --listen-port 53 --listen-address 127.1.1.1 --domain dns.team-h.ml
 
 [Install]
 WantedBy=multi-user.target
